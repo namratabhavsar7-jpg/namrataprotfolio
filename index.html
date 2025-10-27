@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Namrata's Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <!-------------------------------------- Navbar -------------------------------------------->
+  <header>
+    <div class="main">
+      <div class="wrapper">
+        <div class="main-content">
+          <div class="left">
+            <img src="logo.png" alt="" style="height: 110px;width: 120px;">
+        </div>
+
+          <div class="right">
+            <!-- ✅ onclick hata diya (ab jQuery handle karega) -->
+            <div class="menu-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <!-- Navbar -->
+            <ul class="nav" id="navMenu">
+              <li><a href="#Home">Home</a></li>
+              <li><a href="#About">About</a></li>
+              <li><a href="#Technologies">Technologies</a></li>
+              <li><a href="#project">Projects</a></li>
+              <li><a href="#contact">Contact Me</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!------------------------------------------- Home --------------------------------------------------->
+  <section id="Home" class="imgmain">
+    <div class="container">
+      <div class="wrapper">
+        <div class="img-content">
+          <div class="imgtext">
+            <h1 class="head-text">Hi, I'm <span class="highlight">Namrata <br>Bhavsar</span></h1>
+            <p>I’m a software developer who loves building web apps, experimenting with <br>
+              new tech, and turning ideas into functional solutions.
+            </p>
+          </div>
+
+          <div class="button">
+            <a href="files/Namrata_Bhavsar_CV.pdf"
+               download="Namrata_Bhavsar_CV.pdf"
+               class="btn1">Download CV</a>
+
+            <a href="#contact" class="btn1">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!------------------------------------------- About --------------------------------------------------->
+  <section id="About" class="p-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <h2 class="about-text1">About Me</h2>
+          <p class="about-text2">
+            Hi! I'm <span>Namrata Bhavsar</span>, a <span class="role">Python Developer</span> and
+            <span class="role">Web Developer</span>. I specialize in building modern web applications and
+            turning ideas into functional and user-friendly solutions.
+            I have completed a <span class="role">PTP (Professional Training Program)</span> where I gained
+            hands-on experience in <span class="role">Python, Django, HTML, CSS, JavaScript, jQuery, and Bootstrap</span>.
+          </p>
+
+          <div class="education mt-4">
+            <h2 class="about-text1">Education</h2>
+            <div class="bottom">
+              <h3 class="edu">Bachelor of Computer Applications</h3>
+              <h4 class="edu">Gujarat University</h4>
+              <h5 class="edu">2022-2025</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!------------------------------------------- Technologies -------------------------------------------->
+  <section id="Technologies" class="p-5 bg-light">
+    <div class="container">
+      <h1 class="heading text-center mb-5">Technologies</h1>
+      <div class="row g-4 justify-content-start">
+        <div class="col-6 col-lg-2"><div class="logo1"><img src="html.png" alt="HTML"><p>HTML</p></div></div>
+        <div class="col-6 col-lg-2"><div class="logo1"><img src="css.png" alt="CSS"><p>CSS</p></div></div>
+        <div class="col-6 col-lg-2"><div class="logo1"><img src="js.png" alt="JS"><p>JavaScript</p></div></div>
+        <div class="col-6 col-lg-2"><div class="logo1"><img src="jquery.svg" alt="jQuery"><p>jQuery</p></div></div>
+        <div class="col-6 col-lg-2"><div class="logo1"><img src="bootstrap.png" alt="Bootstrap"><p>Bootstrap</p></div></div>
+        <div class="col-6 col-lg-2"><div class="logo1"><img src="python.png" alt="Python"><p>Python</p></div></div>
+        <div class="col-6 col-lg-2"><div class="logo1"><img src="django.svg" width="60" alt="Django"><p>Django</p></div></div>
+        <div class="col-6 col-lg-2"><div class="logo1"><img src="mysql.png" alt="MySQL"><p>MySQL</p></div></div>
+        <div class="col-6 col-lg-2"><div class="logo1"><img src="php.svg" alt="PHP"><p>PHP</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-------------------------------------------- Project ----------------------------------------------->
+  <section id="project" class="p-5 bg-light">
+    <h2 class="about-text1 text-center mb-4">Projects</h2>
+    <div class="container">
+      <div class="row justify-content-start g-4">
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+            <img src="vegetablefruitproject.png" class="card-img-top" alt="Vegetable Project">
+            <div class="card-body">
+              <h5 class="card-title">Vegetable and Fruit Project</h5>
+              <p class="fw-bold">Technology Used:</p>
+              <p>Python, Django, HTML, CSS</p>
+              <a href="https://github.com/namratabhavsar7-jpg/vegetable-fruit-project"
+                 class="btn btn-primary" style="background-color: rgb(0,0,33)">View Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+            <img src="todolist.png" class="card-img-top" alt="To-Do List">
+            <div class="card-body">
+              <h5 class="card-title">To-Do List</h5>
+              <p class="fw-bold">Technology Used:</p>
+              <p>Python, Django, HTML, CSS</p>
+              <a href="https://github.com/namratabhavsar7-jpg/todolist"
+                 class="btn btn-primary" style="background-color: rgb(0,0,33)">View Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-------------------------------------------- Footer ------------------------------------------------->
+  <footer class="footer-modern text-white" id="contact">
+    <div class="container text-center text-md-start">
+      <div class="row align-items-center gy-4">
+        <div class="col-12 col-md-4">
+          <h5 class="fw-semibold mb-2">Made with ❤️ by</h5>
+          <p class="fs-5 mb-0">Namrata Bhavsar</p>
+        </div>
+        <div class="col-12 col-md-4">
+          <p class="fs-5 mb-1"><i class="fas fa-phone me-2"></i> +91 6354207627</p>
+          <p class="fs-6 mb-0"><i class="fas fa-map-marker-alt me-2"></i> Gujarat, India</p>
+        </div>
+        <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end gap-4">
+          <a href="https://www.linkedin.com/in/namrata-bhavsar-441974358/" target="_blank" class="text-white">
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+          <a href="https://github.com/namratabhavsar7-jpg" target="_blank" class="text-white">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+          <a href="mailto:namratabhavsar7@gmail.com" target="_blank" class="text-white">
+            <i class="fas fa-envelope fa-2x"></i>
+          </a>
+        </div>
+      </div>
+      <div class="text-center mt-5 small">
+        © 2025 Namrata Bhavsar. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-------------------------------------------- Script ------------------------------------------------->
+  <script>
+    $(document).ready(function () {
+      // ✅ Toggle menu
+      $(".menu-toggle").click(function () {
+        $("#navMenu").toggle();
+      });
+
+      // ✅ Close menu on link click (mobile)
+      $(".nav a").click(function () {
+        if ($(window).width() <= 768) {
+          $("#navMenu").hide();
+        }
+      });
+
+      // ✅ Handle resize
+      $(window).resize(function () {
+        if ($(window).width() > 768) {
+          $("#navMenu").show();
+        } else {
+          $("#navMenu").hide();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
