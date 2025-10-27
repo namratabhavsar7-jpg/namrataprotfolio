@@ -182,28 +182,35 @@
 
   <!-------------------------------------------- Script ------------------------------------------------->
   <script>
-    $(document).ready(function () {
-      // ✅ Toggle menu
-      $(".menu-toggle").click(function () {
-        $("#navMenu").toggle();
-      });
+  $(document).ready(function () {
 
-      // ✅ Close menu on link click (mobile)
-      $(".nav a").click(function () {
-        if ($(window).width() <= 768) {
-          $("#navMenu").hide();
-        }
-      });
+    // ✅ Page load hone par mobile view me menu hide rahe
+    if ($(window).width() <= 768) {
+      $("#navMenu").hide();
+    }
 
-      // ✅ Handle resize
-      $(window).resize(function () {
-        if ($(window).width() > 768) {
-          $("#navMenu").show();
-        } else {
-          $("#navMenu").hide();
-        }
-      });
+    // ✅ Toggle menu on click
+    $(".menu-toggle").click(function () {
+      $("#navMenu").toggle();
     });
-  </script>
+
+    // ✅ Close menu jab koi link click kare (mobile view)
+    $(".nav a").click(function () {
+      if ($(window).width() <= 768) {
+        $("#navMenu").hide();
+      }
+    });
+
+    // ✅ Resize hone par behavior control
+    $(window).resize(function () {
+      if ($(window).width() > 768) {
+        $("#navMenu").show();
+      } else {
+        $("#navMenu").hide();
+      }
+    });
+  });
+</script>
+
 </body>
 </html>
